@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E1E1"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50sp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/login_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="50sp"
+            android:text="LogIn"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/usernamebar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:inputType="text"
+            android:textSize="15dp"
+            android:hint="Username"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/rectangle">
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginHorizontal="10sp"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/rectangle">
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/rememberme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10sp"
+            android:text="Remember Me"
+            android:textColor="@color/black">
+        </CheckBox>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15sp"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/button_round_login"
+            android:paddingHorizontal="30sp"
+            android:paddingVertical="10sp"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="20sp">
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+</RelativeLayout>
